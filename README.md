@@ -20,8 +20,20 @@ This project was built from Hashlip's Youtube video/repo.
 
 ## Setup
 
-- Create dapp-env folder
--
+- Create Masterclass folder
+- Grab layers folder from another repo or upload your own NFT collection
+- Download or clone Hashlip's art engine from GitHub
+- Run
+```
+npm install
+```
+- Run
+```
+npm run generate
+```
+- This will generate 5 images and create the build folder structure
+- INSERT IMAGE
+
 
 ## Technologies
 
