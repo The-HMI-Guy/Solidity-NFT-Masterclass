@@ -69,7 +69,24 @@ npm run generate
 - Follow upload steps above for the hidden_IMAGE folder
 - Copy the CIP of the hidden_IMAGE and paste it in the hidden.json file
 - Follow upload steps above for the hidden_METADATA folder
+- Create an account at Etherscan.io
+- Click the Profile dropdown and select **API**
+- Now at the API screen, click **+ Add**
+- Download Hashlip's nft-erc721-collection repo
+- https://github.com/hashlips-lab/nft-erc721-collection
+- Open project with an IDE
+- Run
 
+```npm i -g truffle
+```
+- Run
+```
+truffle dashboard
+```
+- This command will bring up the truffle dashboard in your browser
+- Once here, connect your Metamask (make sure Metamask is on the proper network before)
+- Dashboard will show **Incoming Request** from our program
+- Once detected, truffle will display it.
 ## Technologies
 
 Project is created with:
