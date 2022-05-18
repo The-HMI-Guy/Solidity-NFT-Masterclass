@@ -7,7 +7,7 @@ const network = NETWORK.eth;
 // General metadata for Ethereum
 const namePrefix = "Cool Dragon";
 const description = "The HMI Guy's First NFT Attempt";
-const baseUri = "ipfs://NewUriToReplace";
+const baseUri = "ipfs://QmWBPophECw4QxtNkFZGXzevGVRKQ5LZXTnpyTXTnqXFRg";
 
 const solanaMetadata = {
   symbol: "YC",
