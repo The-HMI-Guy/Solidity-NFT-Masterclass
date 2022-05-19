@@ -156,6 +156,8 @@ yarn deploy --network truffle
 yarn verify CONTRACT_ADDRESS --network truffle
 ```
 
+- Check terminal for confirmation, once confirmed, check Etherscan to see the contract verified
+
 ## Technologies
 
 Project is created with:
