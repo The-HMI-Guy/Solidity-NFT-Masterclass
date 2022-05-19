@@ -157,7 +157,46 @@ yarn verify CONTRACT_ADDRESS --network truffle
 ```
 
 - Check terminal for confirmation, once confirmed, check Etherscan to see the contract verified
+- Open a new terminal window and cd into the dapp folder
+- Once in the dapp folder, run
 
+```
+yarn
+```
+
+- Run
+
+```
+yarn dev-server
+```
+
+- If you run into a "Error: listen EADDRINUSE: address already in use XXX.X.X.X" error
+- Run
+
+```
+netstat -avtn | egrep 'Proto|8080'
+```
+
+- After running, grab the PID that is running and run
+
+```
+kill PID#
+```
+
+- Rerun and verify the address has been killed
+
+```
+netstat -avtn | egrep 'Proto|8080'
+```
+- Grab server address and paste into the browser
+- Grab MetaMask address for whitelist and paste it in the whitelist.json
+- cd into the smart contract folder and run
+```
+yarn whitelist-open --network truffle
+```
+- If you run into Error: could not detect network (event="noNetwork", code=NETWORK_ERROR, version=providers/5.6.2)
+- Refresh the truffle dashboard and reconnect wallet
+- Once reconnected, run the above command
 ## Technologies
 
 Project is created with:
