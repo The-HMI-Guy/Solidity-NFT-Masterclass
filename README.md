@@ -233,7 +233,6 @@ control + C
 
 ```
 yarn build
-
 ```
 
 - At this point, drop the public folder inside the root folder of the web server
