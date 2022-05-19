@@ -201,6 +201,41 @@ yarn whitelist-open --network truffle
 - Refresh the truffle dashboard and reconnect wallet
 - Once reconnected, run the above command
 - ![Whitelist-Active](https://user-images.githubusercontent.com/96752508/169289659-7bdc8fca-20f6-4892-9b11-6c7ce6fa72c8.png)
+- After clicking **Mint** and confirming, go to https://testnets.opensea.io/assets/rinkeby/0x0755c2795e4da86d34eef8d87233a36c894b4830/1
+- Locate the NFT project or use your MetaMask to verify the NFT.
+- Now run
+
+```
+yarn whitelist-close --network truffle
+```
+
+- Now run
+
+```
+yarn presale-open --network truffle
+```
+
+- And so on
+- To reveal the artwork, run
+
+```
+yarn reveal --network truffle
+```
+
+- Refresh metadata on Opensea
+- In the terminal running the dev-server, run
+
+```
+control + C
+```
+
+- Run (make sure you're in the minting-dapp folder)
+
+```yarn build
+
+```
+
+- At this point, drop the public folder inside the root folder of the web server
 
 ## Technologies
 
