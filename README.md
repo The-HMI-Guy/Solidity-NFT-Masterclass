@@ -78,28 +78,39 @@ npm run generate
 - Run
 
 ```npm i -g truffle
+
 ```
+
 - Run
+
 ```
 truffle dashboard
 ```
+
 - If truffle dashboard is closed out (termninal closed), you will need to reestablish connection
 - This command will bring up the truffle dashboard in your browser
 - Once here, connect your Metamask (make sure Metamask is on the proper network before)
 - Dashboard will show **Incoming Request** from our program
 - Once detected, truffle will display it.
 - Run
-``` npm i -g corepack
+
+```npm i -g corepack
+
 ```
+
 - Install Smart Contract Dependencies
 - Run
+
 ```
 cd smart-contract
 ```
+
 - Run
+
 ```
 yarn
 ```
+
 - Copy/paste the file **.env.example** and rename duplicate to **.env**
 - Delete content inside the **.env** file besides (no longer need to paste private keys)
   - Collection_URI_Prefix
@@ -110,11 +121,13 @@ yarn
 - Option inside the contract to pay hashlip lab's 5% (optional)
 - If you remove, keep the **withdraw() public onlyOwner** function
 - Run
+
 ```
 yarn rename-contract NEW_CONTRACT_NAME
 ```
+
 - This will update the contract inside the program (files and references)
-- Update  
+- Update
   - tokenName:
   - tokenSymbol:
 - Update
@@ -125,15 +138,23 @@ yarn rename-contract NEW_CONTRACT_NAME
     - Number should reflect the number of images built inside the art_engine
 - Update the whitelistSale, preSale, and publicSale price/maxMintAmountPerTx for the NFT project
 - Run
+
 ```
 yarn deploy --network truffle
 ```
+
 - Check truffle dashboard to see the incoming transactions
   - If you run into yarn issues (warning ../../../package.json: No license field) locate the package.json at this root level and update or remove
   - Also, if the transaction is not approved in a timely manner, an error will be thrown (HeadersTimeoutError: Headers Timeout Error)
 - Once you have a deployed contract (from process > confirm), update
   - contractAddress: "WITH THE CONTRACT ADDRESS FROM THE TERMINAL"
+- Head to Etherscan and go to the Rinkeby network and paste the contract address
+- To see all the cli commands, go to the package.json file
+- To verify the contract, run
 
+```
+yarn verify CONTRACT_ADDRESS --network truffle
+```
 
 ## Technologies
 
