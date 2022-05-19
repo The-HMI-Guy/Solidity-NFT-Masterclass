@@ -1,4 +1,4 @@
-# This Project Will Upload an NFT Collection Onto Ethereum
+# This Project Will Upload an NFT Collection Onto Ethereum's Test Network Rinkeby
 
 ---
 
@@ -16,7 +16,11 @@ This project was built from Hashlip's Youtube video/repo.
 
 ## Features
 
-- Coming soon!
+- Generating an NFT collection (artwork must be created already)
+- Upload the artwork to IPFS or Pinata
+- Create smart contract/dapp UI
+- Whitelist, pre-sale, and public sales available
+  - Can hide metadata/image
 
 ## Setup
 
@@ -77,8 +81,8 @@ npm run generate
 - Open project with an IDE
 - Run
 
-```npm i -g truffle
-
+```
+npm i -g truffle
 ```
 
 - Run
@@ -94,8 +98,8 @@ truffle dashboard
 - Once detected, truffle will display it.
 - Run
 
-```npm i -g corepack
-
+```
+npm i -g corepack
 ```
 
 - Install Smart Contract Dependencies
@@ -242,7 +246,8 @@ yarn build
 Project is created with:
 
 - Node Version: 14.17.3
+- Rest of the dependencies can be found above
 
 ## To Do List
 
-- Coming soon!
+- N/A - Project completed
