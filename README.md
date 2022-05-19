@@ -231,7 +231,8 @@ control + C
 
 - Run (make sure you're in the minting-dapp folder)
 
-```yarn build
+```
+yarn build
 
 ```
 
