@@ -91,6 +91,50 @@ truffle dashboard
 - Run
 ``` npm i -g corepack
 ```
+- Install Smart Contract Dependencies
+- Run
+```
+cd smart-contract
+```
+- Run
+```
+yarn
+```
+- Copy/paste the file **.env.example** and rename duplicate to **.env**
+- Delete content inside the **.env** file besides (no longer need to paste private keys)
+  - Collection_URI_Prefix
+    - Insert CID from Pinata.cloud for the DragonEye_METADATA
+  - Gas_Reporter_Coin_Market_Cap_API_Key
+  - Block_Explorer_API_Key
+    - Insert API from Etherscan
+- Option inside the contract to pay hashlip lab's 5% (optional)
+- If you remove, keep the **withdraw() public onlyOwner** function
+- Run
+```
+yarn rename-contract NEW_CONTRACT_NAME
+```
+- This will update the contract inside the program (files and references)
+- Update  
+  - tokenName:
+  - tokenSymbol:
+- Update
+  - hiddenMetadataUri:
+    - Use the hidden_METADATA
+- Update
+  - maxSupply:
+    - Number should reflect the number of images built inside the art_engine
+- Update the whitelistSale, preSale, and publicSale price/maxMintAmountPerTx for the NFT project
+- Run
+```
+yarn deploy --network truffle
+```
+- Check truffle dashboard to see the incoming transactions
+  - If you run into yarn issues (warning ../../../package.json: No license field) locate the package.json at this root level and update or remove
+  - Also, if the transaction is not approved in a timely manner, an error will be thrown (HeadersTimeoutError: Headers Timeout Error)
+- Once you have a deployed contract (from process > confirm), update
+  - contractAddress: "WITH THE CONTRACT ADDRESS FROM THE TERMINAL"
+
+
 ## Technologies
 
 Project is created with:
