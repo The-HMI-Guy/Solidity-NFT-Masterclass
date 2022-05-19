@@ -83,10 +83,14 @@ npm run generate
 ```
 truffle dashboard
 ```
+- If truffle dashboard is closed out (termninal closed), you will need to reestablish connection
 - This command will bring up the truffle dashboard in your browser
 - Once here, connect your Metamask (make sure Metamask is on the proper network before)
 - Dashboard will show **Incoming Request** from our program
 - Once detected, truffle will display it.
+- Run
+``` npm i -g corepack
+```
 ## Technologies
 
 Project is created with:
