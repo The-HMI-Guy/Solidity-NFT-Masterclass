@@ -188,15 +188,20 @@ kill PID#
 ```
 netstat -avtn | egrep 'Proto|8080'
 ```
-- Grab server address and paste into the browser
+
+- Grab server address and paste into the browser (contract will be paused)
 - Grab MetaMask address for whitelist and paste it in the whitelist.json
 - cd into the smart contract folder and run
+
 ```
 yarn whitelist-open --network truffle
 ```
+
 - If you run into Error: could not detect network (event="noNetwork", code=NETWORK_ERROR, version=providers/5.6.2)
 - Refresh the truffle dashboard and reconnect wallet
 - Once reconnected, run the above command
+- ![Whitelist-Active](https://user-images.githubusercontent.com/96752508/169289659-7bdc8fca-20f6-4892-9b11-6c7ce6fa72c8.png)
+
 ## Technologies
 
 Project is created with:
